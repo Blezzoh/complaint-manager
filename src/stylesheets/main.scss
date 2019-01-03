@@ -1,0 +1,29 @@
+$primary-c: #35434F;
+$second-c: #458964;
+$third-c: #839b72;
+$fourth-c: #b3d682;
+$fifth-c: #dae9b5;
+$black-bg-c: rgba(0,0,0,0.6);
+$padding-title: 10px;
+
+.side-bar-container{
+    background: $black-bg-c;
+    bottom: 0;
+
+}
+.nav-pills .nav-link{
+    color:white
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background: $primary-c;
+    color:white
+}
+.side-bar-title{
+    color: white;
+    padding: $padding-title;
+    text-align: center;
+}
+.side-bar-container hr{
+    border-color:white
+}
+

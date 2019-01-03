@@ -3,13 +3,16 @@ import {Tab, Row, Nav,Col} from 'react-bootstrap'
 import { ic_person_pin } from 'react-icons-kit/md/ic_person_pin'
 import {Icon} from 'react-icons-kit'
 import MeView from './me';
+import '../../stylesheets/main.scss'
 
 export default class Main extends Component{
     render(){
         return(
             <Tab.Container id="left-tabs-example" defaultActiveKey="me">
-                <Row>
-                    <Col lg={2} md={3} sm={12} xs={12}>
+                <Row class='main-row'>
+                    <Col lg={2} md={3} sm={12} xs={12} className='side-bar-container'>
+                        <h6 className='side-bar-title'>MENU</h6>
+                        <hr/>
                         <Nav variant="pills" className="flex-column">
                             <Nav.Item>
                                 <Nav.Link eventKey="me">

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import 'bootstrap/dist/css/bootstrap.css'
 import Main from './components/main/container';
 import { generateData } from './lib/data';

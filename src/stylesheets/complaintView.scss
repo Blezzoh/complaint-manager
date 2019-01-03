@@ -1,0 +1,115 @@
+$primary-c: #35434F;
+$second-c: #458964;
+$third-c: #839b72;
+$fourth-c: #b3d682;
+$fifth-c: #f6ffe0;
+$black-bg-c: rgba(0,0,0,0.6);
+$padding-title: 10px;
+
+$secondary-c: #6C757D;
+$success-c: #30A54A;
+$warning-c: #FDC02F;
+$danger-c: #D93749;
+
+.row.complaint-view{
+    border: .5px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px !important;
+    width: 100%;
+    // -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    // -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    // box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+}
+.complaint-view-btn-area{
+    // background: rgba(0,0,0,0.1); 
+    // height: 80%;
+    margin-left: -30px;
+}
+.complaint-view-complaint{
+    text-align: center;
+    font-size: 12px;
+}
+.complaint-view-delete{
+      margin: auto;
+  width: 60%;
+  padding:15px 30px
+}
+.complaint-view-status,.complaint-view-by, .complaint-view-on, .complaint-view-update{
+    border-left: .5px solid rgba(0,0,0,0.1);    
+    font-size: 12px;
+    // margin-bottom: -10px
+}
+.complaint-view-update{
+    font-size: 12px;
+    border-right: .5px solid rgba(0,0,0,0.1);  
+}
+.complaint-view-btn-view, .complaint-view-btn-view:focus,  .complaint-view-btn-view.active, 
+.complaint-view-btn-view.active:focus
+.complaint-view-btn-view:focus{
+    background: $second-c;
+    border-color: $second-c;
+    border-radius: 15px;
+    font-size: 12px;
+    padding-left: 30px;
+    height: 30px;
+    padding-right: 30px;
+}
+.compaint-view-complaint-info{
+    padding-top: 5px
+}
+.unopened{
+    // background: $warning-c;
+    // border: 1px solid rgb(247, 222, 153);
+    font-weight: bold;
+    font-size: 12px;
+    padding: 3px
+}
+
+ .opened{
+    // background: $secondary-c;
+    // border: 1px solid #FFF2CF;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 3px
+ } 
+ .pending{
+    // background: $secondary-c;
+    // border: 1px solid #FFF2CF;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 3px
+ } 
+ .solved{
+    // background: $second-c;
+    // border: 1px solid rgb(134, 221, 156);
+    font-weight: bold;
+    font-size: 12px;
+    padding: 3px
+ } 
+ .unresolved{
+    // background: $danger-c;
+    // border: 1px solid rgb(221, 165, 171);
+    font-weight: bold;
+    font-size: 12px;
+    padding: 3px
+ }
+
+ .row.complaint-view-unopened{
+    border-bottom: 1px solid $warning-c;
+}
+
+ .row.complaint-view-opened{
+    border-bottom: 1px solid $secondary-c;
+ } 
+ .row.complaint-view-pending{
+     border-bottom: 1px solid $secondary-c;
+
+ } 
+ .row.complaint-view-solved{
+    border-bottom: 1px solid $success-c
+ } 
+ .row.complaint-view-unresolved{
+    border-bottom: 1px solid $danger-c;
+ }
+

@@ -1,0 +1,24 @@
+$primary: #167FFB;
+
+.btn-outline-primary, .btn-outline-primary.active,.btn-outline-primary:hover,{
+    border: none;
+    border-bottom: 2px solid black;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    color: black;
+    background: white;
+    outline-color: white;
+    padding: 5px 15px 
+}
+#new-compalint-icon{
+    margin-right: 10px
+}
+#user-view{
+    padding: 15px
+}
+#assigned-complaints-view{
+    padding-top: 15px
+}
+#assigned-complaints-view h6{
+    margin-bottom: 10px
+}
