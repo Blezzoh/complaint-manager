@@ -1,15 +1,6 @@
 $primary: #167FFB;
 
-.btn-outline-primary, .btn-outline-primary.active,.btn-outline-primary:hover,{
-    border: none;
-    border-bottom: 2px solid black;
-    border-bottom-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-    color: black;
-    background: white;
-    outline-color: white;
-    padding: 5px 15px 
-}
+
 #new-compalint-icon{
     margin-right: 10px
 }
@@ -21,4 +12,16 @@ $primary: #167FFB;
 }
 #assigned-complaints-view h6{
     margin-bottom: 10px
+}
+.btn-outline-secondary{
+    background: white;
+    padding: 5px 15px
+}
+.btn-minimize-complaint {
+  border-radius: 15px;
+  padding: 3px 10px;
+  line-height: 14px;
+  font-size: 18px;
+  margin-left: 90%;
+  margin-bottom: 5px
 }

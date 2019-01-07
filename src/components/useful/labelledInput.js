@@ -4,7 +4,7 @@ const LabelledInput =(props) =>{
     return(
         <InputGroup  size='sm'>
             <InputGroup.Prepend>
-                <InputGroup.Text>{props.label}</InputGroup.Text>
+                <InputGroup.Text style={{width: '100px'}}>{props.label}</InputGroup.Text>
             </InputGroup.Prepend>
             <FormControl size='sm' as={props.as? props.as:'input'}
                 placeholder={props.placeholder ? props.placeholder : ''}
@@ -12,4 +12,5 @@ const LabelledInput =(props) =>{
         </InputGroup>
     )
 }
+
 export default LabelledInput

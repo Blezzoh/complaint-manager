@@ -26,13 +26,13 @@ class MeView extends Component{
         const {hideNewComplaint, visibleComplaint} = this.state
         return (
             <Row id='user-view'> 
-                <Row>
-                    <Col lg={6} md={6}>
-                        <Button variant='outline-primary' size='sm' onClick={()=>this.setState({hideNewComplaint : false})}>
+                <div style={{ display: 'flex' , width: '100%'}}>
+                    <div style={{ marginRight: '30px'}}>
+                        <Button variant='outline-secondary' size='sm' onClick={()=>this.setState({hideNewComplaint : !this.state.hideNewComplaint})}>
                             <Icon id='new-compalint-icon' icon={plus} size={14} /> New Complaint
                         </Button>
-                    </Col>
-                    <Col lg={6} md={6}>
+                    </div>
+                    <div>
                         <InputGroup className="mb-3" size='sm'>
                             <FormControl
                                 placeholder="search ..."
@@ -45,11 +45,11 @@ class MeView extends Component{
                                 </Button>
                             </InputGroup.Append>
                         </InputGroup>
-                    </Col>
+                    </div>
 
-                </Row>
+                </div>
                 <Row style={{ width: '100%', display: (hideNewComplaint) ? 'none' : 'block'}} >
-                    <div><Button onClick={()=>this.setState({hideNewComplaint: true})}>-</Button></div>
+                    <div><Button variant='outline-secondary'  onClick={() => this.setState({ hideNewComplaint: true })} className='btn-minimize-complaint'>-</Button></div>
                     <NewComplaint />
                 </Row>
                 <Row style={{ display: (!hideNewComplaint) ? 'none' : 'block'}} id='assigned-complaints-view'>

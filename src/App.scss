@@ -1,8 +1,31 @@
+$primary-c: #35434F;
+
 .row{
   margin: 0 !important
 }
 html, body{
   font-size: 13px;
   height: 100%;
-  color: black
+  color: black;
+  background: $primary-c
+}
+#any-view{
+  padding-left: 0;
+  padding-right: 0;
+}
+#assigned-complaints-view{
+  width: 100%
+}
+.side-bar-container, #tabs{
+  position: fixed;
+  left: 0;
+  top:0;
+  height: 100%;
+  background: $primary-c
+}
+.main-row{
+  background: $primary-c
+}
+.side-bar-container{
+  height: 1500px;
 }
