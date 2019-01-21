@@ -41,3 +41,5 @@ export const breakArrayInParts = (arr, part)=>{
         })
     )
 }
+
+export const baseUrl = 'bogusForTheMoment'
